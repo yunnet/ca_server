@@ -1,0 +1,13 @@
+{application, ca_server,
+ [
+  {description, "ca server"},
+  {vsn, "1"},
+  {registered, [ca_server_sup]},
+  {applications, [
+                  kernel,
+		  sasl,
+                  stdlib
+                 ]},
+  {mod, { ca_server_app, []}},
+  {env, []}
+ ]}.
